@@ -1,3 +1,5 @@
+import configs
+
 OUTLOOK_VALUES = {
     'Overcast': 0,
     'Rain': 1,
@@ -25,9 +27,9 @@ PLAY_VALUES = {
     1:'Yes'
 }
 
-LOCAL_MODEL = 'play-tennis-model.sav'
-GCS_MODEL = 'https://storage.googleapis.com/ta-tenun/finalized_model.sav'
-DRIVE_MODEL = 'https://drive.google.com/uc?id=1fhuId-hPgfJx015VCaD_75LY7OFA_czG'
+LOCAL_MODEL = configs.LOCAL_MODEL_PATH
+GCS_MODEL = configs.GCS_MODEL_URL
+DRIVE_MODEL = configs.DRIVE_MODEL_URL
 
 MODEL_TYPE = {
     'local': 'Local',

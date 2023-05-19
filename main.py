@@ -1,7 +1,6 @@
 from flask import Flask, request, make_response, jsonify
-import constants
+import constants, general, configs
 import pickle
-import general
 from urllib.request import urlopen
 
 app = Flask(__name__)
@@ -49,4 +48,4 @@ def predictPlayTennisDrive():
 
     return general.makeResponse(result, constants.MODEL_TYPE['drive'])
 
-app.run(port=3000)
+app.run(port=configs.PORT)
