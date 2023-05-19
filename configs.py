@@ -3,6 +3,7 @@ import os
 
 load_dotenv()
 
+HOST = os.environ['HOST']
 PORT = os.environ['PORT']
 
 LOCAL_MODEL_PATH = os.environ['LOCAL_MODEL_PATH']
