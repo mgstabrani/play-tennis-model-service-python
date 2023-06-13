@@ -13,5 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code to the working directory
 COPY . .
 
+EXPOSE 8080
+
 # Set the entry point for the container
 ENTRYPOINT ["python", "main.py"]
