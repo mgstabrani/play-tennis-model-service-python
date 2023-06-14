@@ -48,4 +48,4 @@ def predictPlayTennisDrive():
 
     return general.makeResponse(result, constants.MODEL_TYPE['drive'])
 
-app.run()
+app.run(host=configs.HOST, port=configs.PORT)
